@@ -1,0 +1,7 @@
+Run `cmake ..` from this directory to setup the build structure.
+
+`make` can then be run to build the tutorial binaries.
+
+`make install` can be run to install the binaries. sudo may be required since
+the install is currently setup to go to the default directory specified by
+CMAKE_INSTALL_PREFIX which should be /usr/local.
