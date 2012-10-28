@@ -25,6 +25,12 @@ set (CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BIN_DIR})
 option (USE_MYMATH "Use tutorial provided math functions" ON)
 
 
+# Check if this system provides the log and exp functions.
+include (CheckFunctionExists)
+check_function_exists (log HAVE_LOG)
+check_function_exists (exp HAVE_EXP)
+
+
 # Setup a header file to contain global settings
 configure_file (
     "${PROJECT_SOURCE_DIR}/TutorialConfig.h.in"
