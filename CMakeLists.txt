@@ -66,5 +66,7 @@ target_link_libraries (Tutorial ${EXTRA_LIBS})
 
 # Add the install targets.
 #       These are relative to CMAKE_INSTALL_PREFIX
+set (CMAKE_INSTALL_PREFIX /Users/trprice)
+
 install (TARGETS Tutorial DESTINATION bin)
 install (FILES ${PROJECT_BUILD_INCLUDE_DIR}/TutorialConfig.h DESTINATION include)
